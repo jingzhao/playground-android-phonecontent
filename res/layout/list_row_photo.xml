@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+xmlns:android="http://schemas.android.com/apk/res/android"
+   android:orientation="vertical"
+   android:layout_width="fill_parent"
+   android:layout_height="wrap_content"
+    android:padding="8dp">
+	<RelativeLayout
+	    android:layout_width="fill_parent" 
+	    android:layout_height="fill_parent">
+	    <TextView 
+		    android:textAppearance="?android:attr/textAppearanceMedium"
+			android:layout_height="wrap_content"
+			android:layout_width="wrap_content" 
+			android:id="@+id/sender_address"
+			android:layout_marginLeft="2dip"
+			android:layout_alignParentLeft="true"/>
+		<TextView 
+			android:layout_height="wrap_content" 
+			android:layout_width="wrap_content" 
+			android:id="@+id/message_time"
+			android:layout_alignParentRight="true"/>
+	</RelativeLayout>
+	<TextView android:layout_height="wrap_content" 
+		android:layout_width="wrap_content" 
+		android:id="@+id/message_body"
+		android:singleLine="true"
+		android:layout_below="@+id/phone_number"
+		android:layout_alignParentLeft="true" 
+		android:layout_marginLeft="4dip"/>
+</LinearLayout>

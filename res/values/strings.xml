@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string
+        name="app_name">FLDeviceEvent</string>
+    
+   	<string-array
+        name="event_category">
+        <item>Calls</item>
+        <item>Messages</item>
+        <item>Photos</item>
+        <item>Calendar</item>
+    </string-array>
+</resources>

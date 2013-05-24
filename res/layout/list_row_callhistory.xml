@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:id="@+id/relativeLayout1"
+	android:layout_width="fill_parent" android:layout_height="fill_parent"
+	xmlns:android="http://schemas.android.com/apk/res/android"
+	android:padding="5dip">
+
+	<ImageView android:layout_width="wrap_content"
+		android:layout_height="wrap_content" android:id="@+id/icon_call_status"
+		android:src="@drawable/icon" android:layout_alignParentLeft="true"
+		android:layout_centerInParent="true" android:layout_margin="5dip">
+	</ImageView>
+
+	<LinearLayout
+    android:orientation="vertical"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:padding="5dp"
+    android:layout_toRightOf="@+id/icon_call_status">
+		<RelativeLayout
+		    android:layout_width="fill_parent" 
+		    android:layout_height="fill_parent"
+		    android:id="@+id/layout_call_title">
+			<TextView 
+				android:layout_height="wrap_content" 
+				android:layout_width="wrap_content" 
+				android:id="@+id/txt_time"			
+				android:layout_alignParentRight="true"/>
+			<TextView 
+				android:layout_height="wrap_content"
+				android:layout_width="wrap_content" 
+				android:id="@+id/txt_name"
+				android:textSize="15dip"
+				android:layout_marginLeft="2dip"
+				android:layout_toLeftOf="@+id/txt_time"
+				android:layout_alignParentLeft="true"/>
+		</RelativeLayout>
+		<TextView android:layout_height="wrap_content" 
+			android:layout_width="wrap_content" 
+			android:id="@+id/txt_description"
+			android:layout_alignParentLeft="true" 
+			android:layout_marginTop="3dip"
+			android:layout_marginLeft="4dip"/>
+	</LinearLayout>
+</RelativeLayout>
